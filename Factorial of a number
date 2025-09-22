@@ -1,0 +1,96 @@
+#This is a c++ factorial code together with its corresponding rars file
+# #include <iostream>
+# using namespace std;
+#
+# int fact(int n)
+# {
+#     if (n == 1 || n == 0)
+#     {
+#         return 1;  # Factorial of 0 and 1 is 1
+#     }
+#     else
+#     {
+#         return n * fact(n - 1);
+#     }
+# };
+#
+# int main()
+# {
+#     int n;
+#     cout << "Enter the number: ";
+#     cin >> n;
+#     cout << "Factorial of " << n << " is " << fact(n) << endl;
+#     
+#     return 0;
+# }
+
+
+.data
+prompt: .asciz "Enter a positive integer: "
+error: .asciz "Error:Please enter a non-negative integer.\n"
+result: .asciz "The factorial is: "
+
+# New messages added
+prefix: .asciz "The factorial of "
+is_text: .asciz " is: "
+newline: .asciz "\n"
+
+.text
+.globl _start
+_start:
+    la a0 , prompt
+    li a7 , 4
+    ecall
+    
+    li a7, 5
+    ecall
+    
+    mv t0, a0
+    blt t0, x0, print_error
+    li t1, 1 
+    beq t0, x0, done
+    
+    mv t2, x0
+    
+    loop:
+        addi t2, t2, 1       # i++
+        bgt t2, t0, done     # if i > n, exit loop
+        mul t1, t1, t2       # factorial *= i
+        j loop
+
+done:
+    # Print: "The factorial of "
+    la a0, prefix
+    li a7, 4
+    ecall
+
+    #  Print the number entered
+    mv a0, t0
+    li a7, 1
+    ecall
+
+    #  Print: " is: "
+    la a0, is_text
+    li a7, 4
+    ecall
+
+    #  Print factorial result
+    mv a0, t1
+    li a7, 1
+    ecall
+
+    
+    la a0, newline
+    li a7, 4
+    ecall
+
+    j exit
+
+print_error:
+    la a0, error
+    li a7, 4
+    ecall
+
+exit:
+    li a7, 10
+    ecall
