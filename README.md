@@ -15,7 +15,7 @@ Each program focuses on basic programming concepts such as input/output, functio
 | **Days of the week in Sesotho** | Displays the days of the week in the Sesotho language. |
 | **Mahali Lobola (Wealth)** | A program that calculates or represents the concept of “lobola” (bride price) in Sesotho culture. |
 | **Makopokopo kopoooo (20L check)** | Checks how many 20L containers are needed based on a given quantity (practical arithmetic example). |
-| **Mokorotlo wa Basotho** | Prints or displays the national anthem of Lesotho (“Mokorotlo”). |
+| **Mokorotlo wa Basotho** | Prints or displays Basotho Hat (“Mokorotlo”). |
 
 ---
 
