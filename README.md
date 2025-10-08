@@ -1,7 +1,7 @@
-# CS3520 – Programming Exercises
+# CS3520 – Computer Organisation and Architecture
 
 This repository contains various C++ exercises and small programs developed as part of the **CS3520** course.  
-Each program focuses on basic programming concepts such as input/output, functions, loops, conditionals, and problem-solving using C++.
+Each program focuses on basic programming concepts such as input/output, functions, loops, conditionals, and problem-solving using C++ and using Rars.
 
 ---
 
@@ -43,7 +43,7 @@ Each program focuses on basic programming concepts such as input/output, functio
 
 ## 📚 Course Information
 **Course Code:** CS3520  
-**Course Title:** Programming Principles  
+**Course Title:** Computer Organisation and Architecture
 **Institution:** National University of Lesotho  
 **Instructor:** Mr Setetemela
 
