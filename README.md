@@ -1,4 +1,3 @@
-# CS3520
 # CS3520 – Programming Exercises
 
 This repository contains various C++ exercises and small programs developed as part of the **CS3520** course.  
@@ -31,7 +30,7 @@ Each program focuses on basic programming concepts such as input/output, functio
 ## ⚙️ How to Run
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/CS3520.git
+   git clone https://github.com/<Naira425>/CS3520.git
    ```
 2. Open any `.cpp` file in your C++ IDE or editor (like Code::Blocks, Dev-C++, or VS Code).
 3. Compile and run:
